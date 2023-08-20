@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.home-page {
+    
+    /* height: 90vh; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  /* text-align: center; */
+  font-family: "Montserrat";
+  /* max-width: 100vw; */
+  
+}
+
+.backg-dog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100vw;
+
+}
+
+.welcome-and-image {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    max-width: 90vw;
+    margin-top: 2vh;
+    margin-bottom: 0vh;
+    /* background-color:#68975979; */
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.line {
+  content:" ";
+  height: 2px;
+  width: 50vw;
+  background-color:#699759;
+  margin-bottom: 1vh;
+
+}
+
+
+
+
+
+/* .welcome {
+    font-size: 8vh;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+} */
+.welcome-image {
+    height: 10vh;
+    margin-left: -3vh;
+    margin-right: -3vh;
+    transform: rotate(20deg);
+    z-index: 0;
+    background-color:#699759;
+    border-radius: 60%  60%  60%  60%  / 60%   60%         70%  70%;
+
+    /* padding-left: 5vh; */
+}
+
+/* .hr-lines{
+  position: relative;
+  max-width: 50vw;
+  text-align: center;  
+} */
+
+/* .hr-lines:before{
+  content:" ";
+  height: 2px;
+  width: 45vw;
+  background: black;
+  display: block;
+  position: absolute;
+  top: 0%;
+   left: 0vw; 
+} */
+/* .link-and-dog {
+  display: flex;
+  width: 100vw;
+  flex-direction: row;
+  justify-content: flex-end;
+  
+} */
+
+.home-page h3 {
+  padding-top: 2vh;
+  color: #1746a2;
+}
+
+
+.dog-pic {
+  /* position: absolute;
+  height: 20vh;
+  right:5vw;
+  top: 65vh;
+  z-index: 5; */
+  display: none;
+}
+
+.services {
+    /* margin-top: 8vh; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-image: url("../../background.png"); */
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: #699759;
+    /* margin-top: 5vh; */
+    width: 100%;
+    box-shadow: black;
+    
+}
+
+.service {
+  
+    /* width: 15vw; */
+    min-width: 20px;
+    height: 10vh;
+    background-color:white;
+    margin: 3vh 1vw;
+    padding: 5vh 4vw;
+    line-height: 10vh;
+    box-shadow: 3px 3px 5px;
+    font-family: "Delicious Handrawn", cursive;
+    font-size: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service:hover {
+  /* padding: 5vh 5vw; */
+  transform: translatey(-5px);
+  box-shadow: 5px 5px 10px rgb(95, 212, 59);
+}
+
+.buttons-home {
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  margin-top: 5vh;
+}
+
+
+.service-icon{
+margin-bottom: 5vh;
+  height: 5vh;
+}
+
+
+@media screen and (max-width: 800px) {
+  .description {
+    width: 40vw;
+    text-align:left;
+    font-size: 2vh;
+  }
+  .descriptions {
+    display: none;
+    /* display: flex;
+    flex-direction: row;
+    max-width: 90vw;
+    text-align: center;
+    justify-content: space-between;
+    padding-bottom: 2vh; */
+  }
+  .owners, .providers{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .owners {
+    padding-right: 3vw;
+  }
+  .link-and-dog {
+    font-size: 1.5vh;
+    display: flex;
+    flex-direction: row;
+  }
+  .home-links {
+    padding: 2vh 3vw;
+  }
+  .message-button-div {
+    
+    position: fixed;
+    bottom: 3vh;
+    left: 4vw;
+    
+  }
+  .message-button-div h2 {
+    display: none;
+  }
+  .message-button {
+    height: 5vh;
+  }
+  .welcome {
+    color: white;
+    margin-top: 4vh;
+    padding: 1rem;
+    font-size: 6vh;
+    z-index: 100;
+    background-color:#68975952;
+    width: 80vw;
+  }
+  .signup-home {
+    background-color: #CFE1EE;
+    padding: 5rem;
+  }
+
+  .service {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3vh;
+    height: 1vh;
+    margin: 1vh;
+  }
+  .service-icon {
+    height: 2vh;
+  }
+
+}
+
+@media screen and (min-width: 800px) {
+  .backg-dog {
+    background-image: url('../../background.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 10vh;
+    padding-right: 5vw;
+  }
+  .buttons-home {
+    padding-right: 5vw;
+  }
+
+  .link-and-dog {
+    display: flex;
+    flex-direction: row;
+  }
+  .home-links {
+    margin: 2.5rem;
+    width: 10rem;
+  }
+  
+  .message-button-div {
+    position: fixed;
+    bottom: 1vh;
+    left: 1vw;
+    
+  }
+  .message-button-div h2 {
+    color: black;
+  }
+  .message-button {
+    height: 10vh;
+  }
+
+  .dog-pic {
+    display: none;
+  }
+
+  .home-page em {
+    color: white;
+  }
+  .descriptions {
+    display: flex;
+    flex-direction: column;
+    /* max-width: 40vw; */
+    padding-right: 2vw;
+    padding-bottom: 2vh;
+    background-color:#68975952;
+   
+    
+  }
+  .owners, .providers{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+  }
+  .description {
+    max-width:  40vw;
+    text-align: end;
+    color: white;
+    padding-top: 1vh;
+  }
+  .signup-home {
+    background-color: #CFE1EE;
+    padding: 5rem;
+  }
+
+  .signup-home:hover {
+    background-color:#3fa1a9;
+  }
+
+  .welcome {
+    color: white;
+    margin-top: 12vh;
+    padding: 1rem;
+    font-size: 8vh;
+    z-index: 100;
+    background-color:#68975952;
+  }
+
+}
+
+
+
+

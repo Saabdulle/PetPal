@@ -1,0 +1,32 @@
+.login-choice {
+    align-items: center;
+    text-align: center;
+}
+
+.login-choice h1 {
+    padding-top: 6vh;
+}
+
+.no-account {
+    position:fixed;
+    text-align: center;
+    bottom: 10vh;
+    right: 20vw;
+    left: 20vw;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.signup-link {
+    text-align: center;
+    justify-content: center;
+    color: #699759;
+    text-decoration: none;
+    max-width: 30vw;
+    margin-top: 3vh;
+    font-size: 2vh;
+    background-color:white;
+    padding: 1vw;
+    border-radius: 30px;
+}

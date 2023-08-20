@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+flask-cors = "*"
+gunicorn = "*"
+waitress = "*"
+requests = "*"
+flask-sqlalchemy = "*"
+python-dotenv = "*"
+psycopg2 = "*"
+psycopg2-binary = "*"
+cloudinary = "*"
+
+[dev-packages]
+pytest = "*"
+pytest-cov = "*"
+autopep8 = "*"
+pep8 = "*"
+
+[scripts]
+start_win = "waitress-serve --call server:server" # run main server for windows not working currently 
+start_mac = "gunicorn server:server" # run main server for linux/mac unknown if it works
+dev = "python dev.py"

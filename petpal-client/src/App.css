@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    
+    
+}
+body {
+    padding-top: 8vh;
+    background: #CFE1EE;
+  }
+@media (max-width: 979px) {
+    body {
+      /* padding: 0px; */
+      padding-top: 8vh;
+    }
+  }
+
+h2 {
+  text-align: center;
+}
+
+  button{
+    position: relative;
+    color: #054231;
+    letter-spacing: 1px;
+    margin: 20px;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    padding: 10px;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    /* min-width: 10vw; */
+    /* background: #64d488; */
+  }

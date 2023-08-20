@@ -1,0 +1,240 @@
+.add-photo-btn{
+    margin: 0 0 10px;
+}
+.service-profile-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.provider-profile {
+    display: flex;
+   
+    align-items: center;
+    justify-content: center;
+    /* background-image: url("../../../background.png"); */
+    padding-bottom: 40vh;
+    
+
+}
+.all-services{
+    padding-top: 15px;
+}
+.company-name {
+    color: black;
+    padding-bottom: 2vh;
+    font-size: 3vh;
+}
+
+.details-and-filters {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin-top: -20px;
+    border-radius: 20px;
+    width: 90%;
+    z-index: 1;
+    box-shadow: 5px 5px 5px #a0a0a0;;
+}
+
+.profile-page-details-holder {
+    background-color: #68975952;
+    border-radius: 0px;
+    justify-content: center;
+    margin: 1rem;
+    
+}
+
+#delete-account {
+    display: flex;
+    flex-direction: row;
+    /* align-items: right; */
+    justify-content: flex-end;
+    width: 50vw;
+    /* margin-top: 2rem; */
+    position: fixed;
+}
+
+#delete-account button {
+    font-size: 1.5vh;
+    margin: 5px;
+}
+
+.avail-btn {
+    margin-bottom: 5vh;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    min-height: 75vh;
+    /* justify-content: center; */
+    margin-top: 5vh;
+    /* justify-content: center; */
+    /* background-image: url('../../../dog-bath.png'); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow:hidden;
+    padding: 0px;
+    position: relative;
+    flex-shrink: 0;
+    align-items: center;
+    box-shadow: 5px 5px 5px #777;
+    margin: 0.5rem;
+    border: 1px solid #444;
+    border-radius: 5%;
+    background-color: aliceblue;
+}
+.picture{
+    display: flex;
+    width: 50vw;
+    max-height: 40vh;
+    align-items: flex-end;
+}
+.picture img{
+    width: 100%;
+}
+
+.details-holder {
+    /* list-style:none; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    max-height: 10vh;
+}
+.upload-lbl{
+    text-transform: none;
+    color: #054231;
+    letter-spacing: 1px;
+    /* margin: 20px; */
+    font-size: 18px;
+    font-family: 'Montserrat';
+    /* padding: 10px; */
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 400;
+}
+.calendar {
+    margin-left: 2vw;
+    margin-top: 150px;
+    padding:20px;
+   background-color: #f8f3eed0;
+   border-radius: 10%;
+   box-shadow: 5px 5px 5px #777;
+}
+.calendar-enable{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.calendar-btn{
+    width: 90px;
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    position:absolute;
+    margin-left: 30px;
+    -webkit-appearance: none;
+    background: linear-gradient(0deg, #1e5522, rgba(8, 34, 14));
+    outline:none;
+    border: none;
+    box-shadow: 0 0 0 2px #353535, 0 0 0 4px #3e3e3e, inset 0 0 15px rgb(5, 22, 9), 0 2px 15px rgba(8, 34, 14, .5), inset 0 0 10px rgba(8, 34, 14, .2);
+}
+.calendar-btn:checked{
+    background: linear-gradient(0deg, #18fa03, rgb(14, 88, 32));
+    box-shadow: 0 0 2px #51bb56, 0 0 0 2px #353535, 0 0 0 4px #3e3e3e, inset 0 0 15px rgba(8, 34, 14, 1), 0 2px 15px rgba(8, 34, 14, .5), inset 0 0 10px rgba(8, 34, 14, .2);
+}
+.calendar-btn:before{
+    content:'';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: linear-gradient(0deg, rgb(8, 34, 14 ),#225e26);
+    box-shadow: 0 0 0 1px rgb(6, 29, 12);
+    left: 0;
+    border-radius: 13px;
+    transform:scale(.98, .96);
+    transition: .5s;
+}
+.calendar-btn:checked:before{
+    left:40px;
+}
+
+
+.calendar-btn:after{
+    content:'';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+     left: 38px;
+   background: linear-gradient(0deg, #6b6b6b,#000) ;
+   border-radius: 50%;
+   transition: .5s;
+}
+.calendar-btn:checked:after{
+    left:78px;
+    background: #18b122;
+    box-shadow: 0 0 5px #4ff75a,0 0 15px #4ff75a;
+}
+
+
+
+
+
+
+.upload-btn{
+    margin: 0 0 10px;
+}
+.fc-today-button .fc-button .fc-button-primary{
+    width: 30px !important;
+}
+@media screen and (max-width: 800px) {
+    .service-profile-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .profile-card {
+        height: 70vh;
+    }
+
+    .details-and-filters {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin-top: 9vh;
+        border-radius: 20px;
+    }
+
+    .user-view {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+        max-width: 90vw;
+      }
+
+      #delete-account {
+        display: flex;
+        flex-direction: row;
+        /* align-items: right; */
+        justify-content: flex-end;
+        width: 90vw;
+        margin-top: 1rem;
+        
+    }
+    .avail-btn {
+        margin-bottom: 5vh;
+        margin-top: 0vh;
+    }
+}

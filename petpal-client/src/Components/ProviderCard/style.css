@@ -1,0 +1,105 @@
+.icons {
+    height: 4vh;
+    padding: 0vh 0.25vw;
+}
+
+.prov-card {
+    /* padding: 2vh 0vw; */
+    /* height: 30vh; */
+    background-color:white;
+}
+
+.prov-card{
+    width: 30vw;
+    height: 260px;
+    border-radius:0;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    /* padding-bottom: 5rem; */
+}
+
+.s-p-card h3 {
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.contact-details {
+    background-color: #68975952;
+}
+
+.service-name {
+    padding: 1vh 0vw;
+    font-size: 2rem;
+}
+
+.prov-card:hover h5 {
+    padding: 1vh;
+}
+
+.details-holder {
+    padding: 2vh;
+    display: flex;
+    flex-direction: row;
+}
+.provider-icon{
+    width: 60%;
+    min-height: 170px;
+    position: absolute;
+    top: -90px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 1px 20px rgba(0,0,0,0.35);
+    overflow: hidden;
+    align-content: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    transition: 0.5s;
+    justify-content: center;
+}
+.prov-card:hover .provider-icon{
+    width: 80%;
+    min-height: 215px;
+}
+.details1, .details2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 1vh;
+}
+
+@media screen and (max-width: 800px) {
+    .prov-card{
+      min-width: 80vw;
+      display: flex;
+      flex-direction: row;
+    }
+}
+
+
+.provider-icon img{
+    width: 95%;
+}
+
+.details1{
+    transform: translateY(40px);
+   position: absolute;
+   bottom: 105px;
+transition: 0.5s;
+}
+.prov-card:hover .details1{
+    transform: translateY(-70px);
+}
+.prov-card:hover .details2{
+    display: flex;
+}
+.details2{
+    background-color: white;
+    z-index: 1;
+   position:absolute;
+    margin-bottom: 5px;
+    border-radius: 0 0 50% 50%;
+}

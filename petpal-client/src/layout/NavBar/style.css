@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+  .desktop {
+    display: flex;
+    height: 8vh;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #699759;
+ 
+    position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  z-index: 1000;
+  } 
+  
+  .mobile-display {
+    display: none;
+  }
+  
+  .pet-pal {
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 15vh;
+    color: white;
+    z-index: 5;
+    
+  }
+  .nav-logo {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2vw;
+    /* transform: rotate(20deg); */
+  }
+
+  .nav-image:hover {
+    background-color:#699759;
+  }
+
+  .navbar-list-item {
+    width: min-content;
+  white-space: nowrap;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 3vh;
+    color: white;
+  }
+
+  .nav-links li {
+    margin-right: 2vw;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-links a:hover {
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-position: under;
+    text-decoration-color: darkblue;
+  }
+
+  .nav-image {
+    height: 6vh;
+    /* margin-left: 0vw;
+    padding-left: 2vw; */
+    transform: rotate(20deg);
+    background-color:white;
+    border-radius: 60%  60%  60%  60%  / 60%   60%         70%  70%;
+    border-style: solid;
+    border-color: black;
+  }
+
+  .messages {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0vw;
+    bottom: 2vh;
+    overflow: hidden;
+    transition: height 0.5s;
+    background-color: white;
+    height: 40vh;
+    width: 20vw;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  .closed {
+    position: fixed;
+    left: 2vw;
+    bottom: 2vh;
+    overflow: hidden;
+    /* transition: height 0.5s; */
+    height: 10vh;
+    width: auto;
+    background-color: none;
+  }
+
+  .no-image {
+    display: none;
+  }
+
+  .yes-image {
+    display: block;
+  }
+
+  .close-button {
+    min-width: 2vw;
+    padding: 0rem;
+    margin-top: 1vh;
+    margin-right: 1vh;
+    
+  }
+  .close-button-div {
+    display: flex;
+    flex-direction: row;
+    /* align-items: flex-end; */
+    justify-content: flex-end;
+    padding-bottom: 1vh;
+    /* margin-top: -3vh; */
+  }
+
+  .close-button-div h2 {
+    padding-top: 2vh;
+  }
+
+  .conversation-box{
+    border-bottom: 1px solid black;
+    margin: 5px 5px 2px 5px;
+    padding: 0 0 4px 0;
+    cursor: pointer;
+  }
+
+  .conversation-box-username{
+    margin-left: 4px;
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+
+  .conversation-box-viewmessages{
+    font-size: 13px;
+    margin-left: 4px;
+    margin-bottom: 10px;
+    color: #898F9C;
+  }
+
+  @media screen and (max-width: 800px) {
+    .mobile-display{
+      display: block;
+       position: fixed;
+       z-index: 1000;
+    }
+    .nav-section {
+      display: block;
+      display: flex;
+      height: 8vh;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #699759;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      color: white;
+      
+    }
+    .container,
+    .clicked {
+      display: inline-block;
+      cursor: pointer;
+      padding-right: 2vw;
+    }
+    
+    .bar1, .bar2, .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: white;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+    
+    .clicked .bar1 {
+      transform: translate(0, 11px) rotate(-45deg);
+    }
+    
+    .clicked .bar2 {opacity: 0;}
+    
+    .clicked .bar3 {
+      transform: translate(0, -11px) rotate(45deg);
+    }
+    .menu-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-bottom: 0px;
+    }
+
+    .nav-links-menu {
+      display: flex;
+      flex-direction: column;
+      text-align:right;
+      list-style: none;
+      background-color:#699759;
+      position:absolute;
+      z-index: 100;
+      border-bottom-left-radius: 10px;
+    }
+    .menu-list-item {
+      padding-top: 2vh;
+      margin-right: 2vw;
+      margin-left: 5vw;
+      margin-bottom: 2vh;
+      color: white;
+    }
+
+    .menu-list-item a {
+      color: white;
+    text-decoration: none;
+    }
+
+
+    .desktop {
+      display: none;
+    }
+
+    .messages {
+      height: 35vh;
+      width: 50vw;
+    }
+
+    .closed {
+      position: fixed;
+      left: 2vw;
+      bottom: 2vh;
+      overflow: hidden;
+      /* transition: height 0.5s; */
+      height: 7vh;
+      width: auto;
+      background-color: none;
+    }
+ 
+  
+
+}
+
+  

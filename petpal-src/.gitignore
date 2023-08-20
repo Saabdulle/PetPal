@@ -1,0 +1,10 @@
+.pytest_cache
+__pycache__
+.coverage
+.DS_Store
+Pipfile.lock
+venv/
+.env
+config.py
+mynotes.md
+flask_session/

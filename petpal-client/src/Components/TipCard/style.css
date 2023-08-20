@@ -1,0 +1,78 @@
+.tips-filters {
+    background-color: #699759;
+    padding: 2vh 0vw;
+    width: 100vw;
+    overflow:hidden;
+}
+
+.tips-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    color: white;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.tips-list button {
+    text-align: center;
+    margin: 0vh 2vw;
+    padding: 2vh 2vw;
+    
+}
+
+.tip-card-holder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    font-size: 2vh;
+}
+
+.tip-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 45%;
+    background-color: white;
+    margin: 3vh 2vw;
+}
+
+.tip-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.tip-info span {
+    font-size: 1vh;
+}
+
+.tip-image {
+    height: 20vh;
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 800px ) {
+    .tips-list {
+        display: none;
+    }
+    .tip-card-holder {
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        align-items: center;
+        margin-top: 3vh;
+    }
+    .tip-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        height: 10vh;
+        background-color: white;
+        margin: 1vh 2vw;
+    }
+    .tip-image {
+        height: 10vh;
+        align-self: flex-end;
+    }
+}
