@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: be-service
+  labels:
+    app.kubernetes.io/part-of: be-service
+  # # annotations:
+  # #   prometheus.io/path: "/actuator/prometheus"
+  # #   prometheus.io/port: metrics
+  # #   prometheus.io/scrape: "true"
+spec:
+  selector:
+    app: be-deployment
+  type:  LoadBalancer
+  ports:
+    - name: metrics
+      protocol: TCP
+      port: 5000
+      targetPort: 5000

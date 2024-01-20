@@ -1,0 +1,25 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: be-deployment
+spec:
+  # progressDeadlineSeconds: 60
+  replicas: 1
+  selector:
+    matchLabels:
+      app: be-deployment
+  template:
+    metadata:
+      labels:
+        app: be-deployment
+    spec:
+      containers:
+        - name: be-deployment
+          image: saeedabdulle/petpal-be:latest
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+          - containerPort: 5000
